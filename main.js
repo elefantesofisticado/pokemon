@@ -147,6 +147,23 @@ function recogerDatos(){
       
       console.log("pokemón " + idPokemon)
       console.log ("poke " + outPkmn)
+      var falta = "Te falta aún!"
+      var sobre = "Te pasaste!"
+      if (outPkmn < idPokemon) {
+        console.log("falta");
+        document.getElementById("intento").textContent=falta;
+        document.getElementById("intento").style="color: red";
+      }else if(outPkmn > idPokemon) {
+        console.log("sobra");
+        document.getElementById("intento").textContent=sobre;
+        document.getElementById("intento").style="color: green";
+      }else if(outPokmn = idPokemon) {
+        console.log("justo");
+        document.getElementById("intento").textContent="ATRAPADO!"
+        document.getElementById("intento").style="font-weight: bold";
+        document.getElementById("intento").style="font-size: 33px";
+
+      }
 
 
 
